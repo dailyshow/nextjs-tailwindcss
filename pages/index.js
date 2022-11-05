@@ -1,0 +1,48 @@
+import Head from 'next/head'
+import Link from 'next/link'
+import Layout from "../component/layout"
+
+const PAGES = ({url, content}) => {
+  return(
+    <Link className='m-2' href={url}>
+      <button className='bg-blue-300 rounded shadow-lg'>{content}</button>
+    </Link>
+  );
+}
+
+export default function Home() {
+  return (
+    <Layout>
+      <Head>
+        <title>Next.js</title>
+        <meta name="description" content="next 연습!" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <div className='flex-auto'>
+        <h1 className="text-3xl font-bold bg-red-200 rounded-lg">
+          홈 화면임!!
+        </h1>
+        {/* <Link className='m-2' href={"/width"}>
+          <button className='bg-blue-300 rounded shadow-lg'>width 사용 연습</button>
+        </Link>
+        <Link className='m-2' href={"/color"}>
+          <button className='bg-blue-300 rounded shadow-lg'>color 사용 연습</button>
+        </Link>
+        <Link className='m-2' href={"/typography"}>
+          <button className='bg-blue-300 rounded shadow-lg'>typography 사용 연습</button>
+        </Link>
+        <Link className='m-2' href={"/shadow"}>
+          <button className='bg-blue-300 rounded shadow-lg'>shadow 사용 연습</button>
+        </Link> */}
+        <PAGES url="width" content="width"></PAGES>
+        <PAGES url="color" content="color"></PAGES>
+        <PAGES url="typography" content="typography"></PAGES>
+        <PAGES url="shadow" content="shadow"></PAGES>
+        <PAGES url="text" content="text"></PAGES>
+        <PAGES url="ulol" content="ulol"></PAGES>
+        <PAGES url="border" content="border"></PAGES>
+      </div>
+    </Layout>
+  )
+}
