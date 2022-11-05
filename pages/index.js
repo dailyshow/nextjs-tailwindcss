@@ -42,6 +42,7 @@ export default function Home() {
         <PAGES url="text" content="text"></PAGES>
         <PAGES url="ulol" content="ulol"></PAGES>
         <PAGES url="border" content="border"></PAGES>
+        <PAGES url="flexAndGrid" content="flexAndGrid"></PAGES>
       </div>
     </Layout>
   )
