@@ -4,8 +4,8 @@ import Layout from "../component/layout"
 
 const PAGES = ({url, content}) => {
   return(
-    <Link className='m-2' href={url}>
-      <button className='bg-blue-300 rounded shadow-lg'>{content}</button>
+    <Link className="w-1/6 bg-red-300 m-2 text-center" href={url}>
+      <div className='rounded shadow-lg'>{content}</div>
     </Link>
   );
 }
@@ -19,10 +19,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className='flex-auto'>
-        <h1 className="text-3xl font-bold bg-red-200 rounded-lg">
-          홈 화면임!!
-        </h1>
+      <h1 className="text-3xl text-center font-bold bg-red-200 rounded-lg">
+        홈 화면임!!
+      </h1>
+      <div className="flex flex-wrap">
         {/* <Link className='m-2' href={"/width"}>
           <button className='bg-blue-300 rounded shadow-lg'>width 사용 연습</button>
         </Link>
