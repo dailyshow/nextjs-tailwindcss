@@ -4,7 +4,7 @@ import Layout from "../component/layout"
 
 const PAGES = ({url, content}) => {
   return(
-    <Link className="w-1/6 bg-red-300 m-2 text-center" href={url}>
+    <Link className="grow w-1/6 bg-red-300 m-2 text-center rounded-md" href={url}>
       <div className='rounded shadow-lg'>{content}</div>
     </Link>
   );
@@ -43,6 +43,9 @@ export default function Home() {
         <PAGES url="ulol" content="ulol"></PAGES>
         <PAGES url="border" content="border"></PAGES>
         <PAGES url="flexAndGrid" content="flexAndGrid"></PAGES>
+        <PAGES url="transition" content="transition"></PAGES>
+        <PAGES url="animation" content="animation"></PAGES>
+        <PAGES url="apply" content="apply"></PAGES>
       </div>
     </Layout>
   )
