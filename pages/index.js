@@ -46,6 +46,7 @@ export default function Home() {
         <PAGES url="transition" content="transition"></PAGES>
         <PAGES url="animation" content="animation"></PAGES>
         <PAGES url="apply" content="apply"></PAGES>
+        <PAGES url="responsive" content="responsive"></PAGES>
       </div>
     </Layout>
   )
